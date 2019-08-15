@@ -7,4 +7,6 @@
         <property name="message" value="I'll be back"/>
     </bean>
     <bean class="ru.ariona.springcontext.quoter.InjectRandomIntAnnotationPostProcessor"/>
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+    <bean class="ru.ariona.springcontext.quoter.ProfilingHandlerBeanPostProcessor"/>
 </beans>
