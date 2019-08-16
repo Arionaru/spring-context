@@ -12,10 +12,7 @@ public class SpringContextApplication {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(SpringContextApplication.class, args);
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
-        while (true) {
-            Thread.sleep(400);
-            context.getBean(Quoter.class).sayQuote();
-        }
+
     }
 
 }
